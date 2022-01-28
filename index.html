@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kossi Glokpor's web page</title>
+        <link rel="icon" type="image/ico" href="favicon.ico">
+        <meta name="description" content="Kossi's web page. Blog and personal stuffs.">
+        <meta property="og:title" content="Kossi Glokpor's web page."/>
+        <meta property="og:description" content="Kossi's web page. Blog and personal stuffs." />
+        <meta property="og:image" content="" />
+    </head>
+    <body>
+        <div class = "top-box">
+            <div class="main-container">
+                <div class="desc-wrapper">
+                    <div class="portrait"></div>
+                    <span style="transform: translateY(-24px);font-weight: bold;font-size: 20px;">glk0</span>
+                    <p class="description">
+                        Hi, I'm Kossi Glokpor, a student residing at the Ecole Nationale des Sciences 
+                        Appliquees de Fes, Morocco. My main interests are computer science and maths.
+                    </p>
+                </div>
+                <span class="contact">Find me on</span>
+                <div class="social">
+                    <ul>
+                        <li><a href="https://twitter.com/glk_em">
+                            <img src="assets/twitter.png">
+                        </a></li>
+                        <li><a href="https://www.linkedin.com/in/kossi-glokpor/">
+                            <img src="assets/linkedin.png">
+                        </a></li>
+                        <li><a href="https://github.com/glk0/">
+                            <img src="assets/github.png">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">© 2022 Kossi GLOKPOR</div>
+        </div>
+        <style>
+            html {
+                background-color: #f8f8f8;
+                color: #444;
+            }
+            html.dark {
+                background-color: #232328;
+                color: #c0c0c4;
+            }
+            html, body, .top-box {
+                position: absolute;
+                min-height: 100vh;
+                width: 100%;
+                margin: 0;
+                font-family: monospace;
+            }
+            .main-container {
+                display: flex;
+                flex-direction: column;
+                width: 100vw;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+            }
+            .desc-wrapper {
+                display: flex;
+                flex-direction: column;
+                margin: 50px 30px 0px 30px ;
+                max-width: 450px;
+                align-items: center;
+            }
+            .portrait {
+                width: 125px;
+                height: 125px;
+                border-radius: 50%;
+                background-image: url("assets/glk0.jpg");
+                background-size: cover;
+                margin: 30px 0px 60px 0px;
+            }
+            .description {
+                line-height: 24px;
+                margin-top: 0px;
+            }
+            .contact {
+                margin: 15px auto;
+            }
+            .social > ul {
+                display: flex;
+                list-style-type: none;
+                flex-direction: row;
+                padding: 0px;
+                justify-content: space-between;
+                max-width: 240px;
+                width: 100vw;
+            }
+            html.dark .social > ul > li > a > img {
+                filter: invert()
+            }
+            .social > ul > li > a > img {
+                height: 30px;
+                width: 30px;
+                opacity: 0.7;
+            }
+            .social > ul > li > a > img:hover {
+                opacity: 1;
+            }
+            .copyright {
+                width: 100%;
+                position: absolute;
+                bottom: 40px;
+                left: 0px;
+                font-weight: bold;
+                opacity: 0.7;
+                text-align: center;
+                font-size: 11px;
+            }
+        </style>
+        <script>
+            let date = new Date;
+        if (
+            (date.getHours() > 22 || date.getHours() < 6) // It's night 
+                ||
+            (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) // Browser in fark mode
+            ) {
+            document.documentElement.classList.add("dark") // Toggle dark mode
+        }
+        </script>
+    </body>
+</html>
