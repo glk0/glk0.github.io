@@ -7,16 +7,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Kossi Glokpor's web page</title>
         <link rel="icon" type="image/ico" href="favicon.ico">
-        <meta name="description" content="Kossi's web page. Blog and personal stuffs.">
+        <meta name="description" content="Kossi's web page and blog.">
         <meta property="og:title" content="Kossi Glokpor's web page."/>
-        <meta property="og:description" content="Kossi's web page. Blog and personal stuffs." />
-        <meta property="og:image" content="" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KRQNZ2B008"></script>
-        <script>
+        <meta property="og:description" content="Kossi's blog. I share my work and thoughts here." />
+        <meta property="og:image" content="https://glk0.me/glk0.jpg" />
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-KRQNZ2B008" async></script>
+        <script async>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
             gtag('config', 'G-KRQNZ2B008');
         </script>
     </head>
@@ -27,11 +26,15 @@
                     <div class="portrait"></div>
                     <span style="transform: translateY(-24px);font-weight: bold;font-size: 20px;">glk0</span>
                     <p class="description">
-                        Hi, I'm Kossi Glokpor, a student residing at the Ecole Nationale des Sciences 
-                        Appliquees de Fes, Morocco. My main interests are computer science and maths.
+                        Hi, I'm Kossi Glokpor, an engineering student at the National School of Applied 
+                        Science of Fes, Morocco and a self-taught developer. I share stuff I learn on my
+			<a href = "./blog/">blog</a>. My open source work is on
+			<a href = "https://github.com/glk0">github</a>. If you find it useful, consider
+			<a href="github.com/glk0/sponsor">sponsoring<a>.<br> A list some useful links is
+			<a href = "./links.html">here</a>.
                     </p>
                 </div>
-                <span class="contact">Find me on</span>
+                <span class="contact">Reach me with</span>
                 <div class="social">
                     <ul>
                         <li><a href="https://twitter.com/glk_em">
@@ -43,23 +46,26 @@
                         <li><a href="https://github.com/glk0/">
                             <img src="assets/github.png">
                         </a></li>
-                        <li><a href="mailto:hotkatz32@gmail.com">
+                        <li><a href="mailto:k@glk0.tech">
                             <img src="assets/mail.png">
                         </a></li>
                     </ul>
                 </div>
             </div>
-            <div class="copyright">© 2022 Kossi GLOKPOR</div>
         </div>
         <style>
             html {
-                background-color: #f8f8f8;
-                color: #444;
+		--background-color:#f8f8f8;
+		--text-color : #444;
             }
-            html.dark {
-                background-color: #232328;
-                color: #c0c0c4;
+	    html.dark {
+		--bg-color : #232328;
+		--text-color:#c0c0c4;
             }
+	    html {
+		color : var(--text-color);
+		background-color: var(--bg-color);
+	    }
             html, body, .top-box {
                 position: absolute;
                 min-height: 100vh;
@@ -69,6 +75,7 @@
             }
             .main-container {
                 display: flex;
+		min-height : 90vh;
                 flex-direction: column;
                 width: 100vw;
                 justify-content: center;
@@ -78,10 +85,16 @@
             .desc-wrapper {
                 display: flex;
                 flex-direction: column;
-                margin: 50px 30px 0px 30px ;
+                margin: 50px 25px 0px 25px ;
                 max-width: 450px;
                 align-items: center;
             }
+	    .desc-wrapper a, .desc-wrapper  a:visited {
+		color: var(--text-color);
+	    }
+	    .desc-wrapper a:hover {
+		font-weight: bold;
+	    }
             .portrait {
                 width: 125px;
                 height: 125px;
@@ -116,16 +129,6 @@
             }
             .social > ul > li > a > img:hover {
                 opacity: 1;
-            }
-            .copyright {
-                width: 100%;
-                position: absolute;
-                bottom: 40px;
-                left: 0px;
-                font-weight: bold;
-                opacity: 0.7;
-                text-align: center;
-                font-size: 11px;
             }
         </style>
         <script>
