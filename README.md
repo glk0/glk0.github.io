@@ -1,3 +1,4 @@
 **Personnal page** 
 -----------------
-Visit it at https://glk0.me
+
+You can visit it at https://glk0.github.io
