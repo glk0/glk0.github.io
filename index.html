@@ -7,9 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Kossi Glokpor's web page</title>
         <link rel="icon" type="image/ico" href="favicon.ico">
-        <meta name="description" content="Kossi's web page and blog.">
-        <meta property="og:title" content="Kossi Glokpor's web page."/>
-        <meta property="og:description" content="Kossi's blog. I share my work and thoughts here." />
+        <meta name="description" content="Kossi web page and blog.IT & Maths related stuffs">
+        <meta property="og:title" content="Kossi's web page."/>
+        <meta property="og:description" content="glk0's blog. I share my work here." />
         <meta property="og:image" content="https://glk0.me/glk0.jpg" />
     </head>
     <body>
@@ -17,50 +17,46 @@
             <div class="main-container">
                 <div class="desc-wrapper">
                     <div class="portrait"></div>
-                    <span style="transform: translateY(-24px);font-weight: bold;font-size: 20px;">glk0</span>
+                    <span style="transform: translateY(-24px);
+                                 font-weight: bold;font-size: 20px;">glk0</span>
                     <p class="description">
-                        Hi, I'm Kossi Glokpor. I'm currently a student at Ecole Nationale des Sciences
-			Appliquees de Fes, Fes-Boulemane, Morocco. I do
-			<a href = "https://leetcode.com/glk0/">some</a>  
-			<a href = "https://leetcode.com/glk0/">programming</a>.
-			<!--
-			I share stuff I learn on my <a href = "./blog/">blog</a>. I also have a
-			<a href = "https://github.com/glk0">github</a> 
-			and a 
-			<a href = "https://leetcode.com/glk0/">leetcode</a> account.
-			<br>A list some useful links is <a href = "./links.html">here</a>.
-			-->
+                    Hi, I'm Kossi an engineering student in Morocco. I do some part time
+                    web development and sometime I put some code on my
+                    <a href="https://github.com/glk0">github</a>.
                     </p>
                 </div>
                 <span class="contact">Reach me with</span>
                 <div class="social">
                     <ul>
                         <li><a href="https://www.linkedin.com/in/glk0/">
-                            <img src="assets/linkedin.png">
-                        </a></li>
+                                <img src="assets/linkedin.png">
+                            </a>
+                        </li>
                         <li><a href="https://github.com/glk0/">
-                            <img src="assets/github.png">
-                        </a></li>
-                        <li><a href="mailto:k@glk0.tech">
-                            <img src="assets/mail.png">
-                        </a></li>
+                                <img src="assets/github.png">
+                            </a>
+                        </li>
+                        <li><a href="hotkatz32@gmail.com">
+                                <img src="assets/mail.png">
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
         <style>
             html {
-		--background-color:#f8f8f8;
-		--text-color : #444;
+                --background-color:#f8f8f8;
+                --text-color : #444;
             }
-	    html.dark {
-		--bg-color : #232328;
-		--text-color:#c0c0c4;
+            html.dark {
+                --bg-color : #232328;
+            --text-color:#c0c0c4;
             }
-	    html {
-		color : var(--text-color);
-		background-color: var(--bg-color);
-	    }
+            html {
+                color : var(--text-color);
+            background-color: var(--bg-color);
+            }
             html, body, .top-box {
                 position: absolute;
                 min-height: 100vh;
@@ -70,26 +66,26 @@
             }
             .main-container {
                 display: flex;
-		min-height : 90vh;
-                flex-direction: column;
-                width: 100vw;
-                justify-content: center;
-                align-items: center;
-                font-size: 16px;
+                min-height : 90vh;
+            flex-direction: column;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
             }
             .desc-wrapper {
                 display: flex;
                 flex-direction: column;
                 margin: 50px 25px 0px 25px ;
-                max-width: 450px;
+                max-width: 425px;
                 align-items: center;
             }
-	    .desc-wrapper a, .desc-wrapper  a:visited {
-		color: var(--text-color);
-	    }
-	    .desc-wrapper a:hover {
-		font-weight: bold;
-	    }
+            .desc-wrapper a, .desc-wrapper  a:visited {
+                color: var(--text-color);
+            }
+            .desc-wrapper a:hover {
+                font-weight: bold;
+            }
             .portrait {
                 width: 125px;
                 height: 125px;
@@ -99,7 +95,8 @@
                 margin: 30px 0px 60px 0px;
             }
             .description {
-                line-height: 24px;
+                text-align: justify;
+                line-height: 25px;
                 margin-top: 0px;
             }
             .contact {
@@ -111,8 +108,8 @@
                 flex-direction: row;
                 padding: 0px;
                 justify-content: space-between;
-                max-width: 300px;
-                width: 90vw;
+                max-width: 280px;
+                width: calc(100vw - 100px);;
             }
             html.dark .social > ul > li > a > img {
                 filter: invert()
@@ -128,13 +125,11 @@
         </style>
         <script>
             let date = new Date;
-        if (
-            (date.getHours() > 22 || date.getHours() < 6) // It's night 
-                ||
-            (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) // Browser in fark mode
+            if ((date.getHours() > 22 || date.getHours() < 6) || // It's night
+                (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) // I dark mode
             ) {
-            document.documentElement.classList.add("dark") // Toggle dark mode
-        }
+                document.documentElement.classList.add("dark") // Toggle dark mode
+            }
         </script>
     </body>
 </html>
