@@ -4,12 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CESTOM Fes</title>
-    <link rel=stylesheet href="./home.css">
+    <!--<link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">-->
+    <link rel="icon" type="image/png" href="./assets/icons/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel=stylesheet href="./assets/css/home.css">
 </head>
 <body>
-    <div style="text-align:center;font-family: mono; margin-top: 10vh;">
-        Welcome to the CESTOM Fes page.<br>
-        Temporarily hosted on my personnal site.
+    <div>
+        <a id="back-to-top" href="#hero-banner">︽</a>
+        <header>
+            <input type=checkbox id=menustate>
+            <nav>
+                <a href="./">
+                    <img src="./assets/icons/logo.png">
+                    <span>CESTOM</span>
+                </a>
+                <label for="menustate">
+                    <span class="open">≡</span>
+                    <span class="close">×</span>
+                </label>
+                <ul id="navbar-menu">
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./apropos.html">A propos</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./bureau.html">Bureau</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+            <div id="hero-banner">
+                <div id="hero-text">
+                    <h1>BIENVENU A LA<br> CESTOM DE FES</h1>
+                    <h3>Decouvrez la communaute togolaise a Fes</h3>
+                </div>
+                <a href="#who-we-are">⌄</a>
+            </div>
+            <div id="who-we-are">
+                <h2>QUI SOMMES NOUS ?</h2>
+                <p class="desc-1">
+                Nous sommes la section de Fes de la <a href="https://cestom.tg">CESTOM</a>. Notre communaute a pour mission
+                de rassembler les etudiants et stagiaires togolais dans la ville de Fes. Nous oeuvrons afin de permettre a
+                nos membres de reussir leur integration et de partager entre eux. 
+                </p>
+                <div class="desc-2">
+                    <img class="desc-2-img" 
+                        src="./assets/img/speaker.png">
+                    <div class="desc-2-text">
+                        <p>
+                        Tout au long de l'annee, nous organisons divers evenements 
+                        pour permettre a nos membres de se retrouver et d'echanger.
+                        Suivez nous sur les reseaux ou visitez notre <a href="./blog.html">blog</a>
+                        pour etre au courant de nos derniers activites.
+                        </p>
+                    </div>
+                </div>
+                <div class="desc-3">
+                    Si vous etes nouvellement arrive dans la ville, notre site comporte une 
+                    <a href="./faq.html">FAQ</a> ou nous avons rassemble les informations de base
+                    generalement utiles: procedure administratives, logements, addresses utiles, etc.
+                    Et si vous desirez integrer la communaute, n'hesitez pas a contacter un membre
+                    du <a href="./bureau.html">bureau</a>.
+                </div>
+            </div>
+            <div class="blog">
+                <h2>Blog</h2>
+                <h4>Decouvrez nos actualites.</h4>
+                <ul>
+                    <li class="blog-article">
+                        <span class="article-date">10/01/2023</span>
+                        <h4 class="article-title">Titre article 1</h4>
+                        <p class="article-summary">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing eit ...
+                            <a class="article-more-link">More</a>
+                        </p>
+                    </li>
+                    <li class="blog-article">
+                        <span class="article-date">10/01/2023</span>
+                        <h4 class="article-title">Titre article 1</h4>
+                        <p class="article-summary">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing eit ...
+                            <a class="article-more-link">More</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <button class="back-to-top"></button>
+        <footer>
+            <ul id="nav-link">
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="./apropos.html">A propos</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./bureau.html">Bureau</a></li>
+            </ul>
+            <ul id="social-links">
+                <li><a href=""><img src="./assets/email.png"></a></li>
+                <li><a href=""><img src="./assets/facebook.png"></a></li>
+                <li><a href=""><img src="./assets/instagram.png"></a></li>
+                <li><a href=""><img src="./assets/twitter.png"></a></li>
+            </ul>
+            <a class="bottom-logo"></a>
+            <div id="made-by">Made by<a href="https://glk0.github.io">glk0</a></div>
+        </footer> 
     </div>
+    <script src="./assets/js/home.js"></script>
 </body>
 </html>

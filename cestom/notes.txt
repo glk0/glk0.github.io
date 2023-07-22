@@ -1,0 +1,52 @@
+https://www.uea.ac.uk/uea-life/campus-life
+https://faq.whatsapp.com/
+https://mega.nz/folder/iR0SiCaK#thg-GgDO2B4rTfzEC_fZ6w
+https://paavandesign.com/blog/ostaulta/#/
+
+- Back to top button
+
+Pages:
+    - Home
+    - FAQ
+    - Bureau
+    - Blog
+
+- Individual news page
+
+Home:
+   - Hero banner:
+       Bienvenue a la CESTOM de Fes! Decouvrez la communaute des etudiants togolais a Fes.
+   - Qui sommes nous ?
+        Nous sommes la branche locale de la communaute des etudiants et stagiaires togolais a Fes.
+        Nous nous sommes donnes comme mission  de rassembler etudiants venant du Togo vivant dans la ville de Fes.
+        Notre communaute permet aux etudiant de s'entraider, d'echanger entre eux et de maintenir un lien avec le pays.
+    - Actus recentes: 3 au plus + bouton "Plus d'actus"
+    - Vous etes nouveau dans la communaute ?
+        - Vistez notre FAQ.
+        - Rejoignez nous sur les reseaux.
+        - Contactez un membre de notre bureau pour que nous puissions vous rencontrer
+        - Vistez notre page d'actus pour etre au courant de nos activites futures.
+    - Footer
+        - Informations de contact CESTOM centrale & locale
+        - Social & telephone links.
+FAQ:
+    - Titre: FAQ
+    - Text introductif:Cette page rassemble des informations relatives aux questions que les nouveaux arrivant posent generalment. Il contient
+    des infos sur comment s'installer, gerer les procedures adminsitratives, des astuces pour reduire les depenses etc. Si vous
+    trouvez cette page utile et que vous souhaitez contribuer, vous pouvez contacter le bureau de la CESTOM
+    - Articles populaires: liste
+
+Blog:
+    - Titre: Blog
+    - Liste des article: with the top line of the articles printed.
+Bureau:
+    - Titre : Bureau 2023
+    - Liste horizontal des membres + coordonnees disponibles
+
+TODO:
+    - Choose colors
+    - Find photos for the home page. 
+    - Write the index page. Simple static
+    - Break it into templates & build the other template pages. Will require more 
+    info about Jekyll and Liquid
+https://www.pausly.app/blog/accessible-hamburger-buttons-without-javascript
