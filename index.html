@@ -20,13 +20,12 @@
                     <span style="transform: translateY(-24px);
                                  font-weight: bold;font-size: 20px;">glk0</span>
                     <p class="description">
-                    Hi, I'm Kossi, an engineering student in Morocco. I do part time
-                    web development and I write some code on my
-                    <a href="https://github.com/glk0">github</a>.
+                    Hi, I'm Kossi, and I'm currently studying embedded systems engineering in Morocco. You 
+                    can find code I write on my <a href="https://github.com/glk0">github</a>
+                    I'm on <a href="https://linkedin.com/in/glk0">linkedin</a>.
                     </p>
                 </div>
-                <span class="contact">Reach me with</span>
-                <div class="social">
+                <!--<div class="social">
                     <ul>
                         <li><a href="https://www.linkedin.com/in/glk0/">
                                 <img src="assets/linkedin.png">
@@ -41,7 +40,7 @@
                             </a>
                         </li>
                     </ul>
-                </div>
+                </div>-->
             </div>
         </div>
         <style>
@@ -51,11 +50,11 @@
             }
             html.dark {
                 --bg-color : #232328;
-            --text-color:#c0c0c4;
+                --text-color:#c0c0c4;
             }
             html {
                 color : var(--text-color);
-            background-color: var(--bg-color);
+                background-color: var(--bg-color);
             }
             html, body, .top-box {
                 position: absolute;
@@ -67,11 +66,11 @@
             .main-container {
                 display: flex;
                 min-height : 90vh;
-            flex-direction: column;
-            width: 100vw;
-            justify-content: center;
-            align-items: center;
-            font-size: 16px;
+                flex-direction: column;
+                width: 100vw;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
             }
             .desc-wrapper {
                 display: flex;
@@ -80,10 +79,10 @@
                 max-width: 425px;
                 align-items: center;
             }
-            .desc-wrapper a, .desc-wrapper  a:visited {
+            .desc-wrapper a, .desc-wrapper  a:visited, .contact a, .contact a:visited {
                 color: var(--text-color);
             }
-            .desc-wrapper a:hover {
+            .desc-wrapper a:hover, .contact a:hover {
                 font-weight: bold;
             }
             .portrait {
@@ -102,6 +101,7 @@
             .contact {
                 margin: 15px auto;
             }
+            /*
             .social > ul {
                 display: flex;
                 list-style-type: none;
@@ -121,7 +121,7 @@
             }
             .social > ul > li > a > img:hover {
                 opacity: 1;
-            }
+            } */
         </style>
         <script>
             let date = new Date;
