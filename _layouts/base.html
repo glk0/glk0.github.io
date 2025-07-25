@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+    {% include ga.html  %}
+    <title>{{ page.title }}</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="google-site-verification" content="Eyt3IJfZhGy55lfi32tSn95RTXHue1gdRW6zem8jfj0" />
+
+    {% if page.description %}
+        <meta name="description" content="{{ page.description }}">
+    {% endif %}
+    {% if page.keywords %}
+        <meta name="keywords" content="{{ page.keywords }}">
+    {% endif %}
+    <meta name="author" content="Kossi GLOKPOR">
+    <link rel="icon" type="image/png" href="assets/icons/favicon-96x96.png">
+    <link rel="stylesheet" href="assets/css/base.css"/>
+    {% if page.extra_css %}
+        {% for css in page.extra_css %}
+            <link rel="stylesheet" href="assets/css/{{ css }}" />
+        {% endfor %}
+    {% endif %}
+   </head>
+
+   </body>
+   {% if page.extra_js %}
+       {% for js in page.extra_js %}
+           <link rel="stylesheet" href="assets/css/{{ css }}" />
+           <script type="text/javascript" async src="{{ js }}"></script>
+       {% endfor %}
+   {% endif %}
+   <main id="main-body">
+        {{ content }}
+   </main>
+   </body>
+</html>

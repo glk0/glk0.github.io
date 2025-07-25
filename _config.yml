@@ -1,0 +1,12 @@
+theme: null
+exclude:
+  - notes.md
+  - Gemfile
+  - Gemfile.lock
+include:
+  - posts/
+collections:
+  notebooks:
+    output: true
+    folder: notebooks
+    layout: base

@@ -1,21 +1,23 @@
-<!DOCTYPE HTML>
-<html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Kossi GLOKPOR</title>
-      <link rel="stylesheet" href="main.css">
-      <meta name="description" content="Personal website of Kossi GLOKPOR, showcasing professional experience and projects.">
-      <meta name="keywords" content="Kossi GLOKPOR, portfolio, projects, professional experience, GitHub, LinkedIn">
-      <meta name="author" content="Kossi GLOKPOR">
-   </head>
-   </body>
-   <main id="homepage">
-      <h1>Kossi GLOKPOR</h1>
-      <nav>
-         <a rel="me" href="https://github.com/glk0">github</a> &middot;
-         <a rel="me" href="https://www.linkedin.com/in/glk0/">linkedin</a>
-      </nav>
-   </main>
-   </body>
-</html>
+---
+layout: base
+title: Kossi GLOKPOR
+date: 2025-07-09
+sitemap: true
+extra_css:
+    - home.css
+---
+
+<h1>Kossi GLOKPOR</h1>
+<nav>
+   <a rel="me" href="https://github.com/glk0">github</a> &middot;
+   <a rel="me" href="https://www.linkedin.com/in/glk0/">linkedin</a>
+    <ul>
+    {% assign sorted_notes = site.notebooks %}
+    <!-- {{ site.collections | inspect}} -->
+    {% for note in sorted_notes %}
+      <li>
+        <a href="{{ note.url }}">{{ note.title }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+</nav>

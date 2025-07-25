@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    flex-flow: row;
+}
+main {
+    display: flex;
+    flex-flow: column;
+}
+#main-body h1 {
+	font-size: clamp(1.6rem, 7vw, 3rem);
+	margin-top: auto;
+	margin-bottom: 0.2rem;
+}
+
+#main-body nav {
+	margin-top: 0.2rem;
+	margin-bottom: auto;
+}
